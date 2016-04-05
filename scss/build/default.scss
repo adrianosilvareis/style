@@ -1,6 +1,11 @@
-@import "../_reset.scss";
-@import "../_variables.scss";
-@import "../_grid.scss";
-@import "../partials/_message.scss";
-@import "../partials/_helper.scss";
-@import "../partials/_cards.scss";
+@import "compass";
+@import "compass/reset";
+@import "../partials/_icons.scss";
+@import "../modules/variables";
+@import "../modules/mixins";
+@import "../partials/grid";
+@import "../modules/background-colors";
+@import "../partials/alert";
+@import "../partials/cards";
+@import "../partials/footer";
+@import "../partials/header";

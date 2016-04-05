@@ -1,62 +1,205 @@
-html,
-body,
-div,
-table,
-td,
-tr,
-th,
-ul,
-ol,
-li {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.icons-sprite, .icons-accept, .icons-act_ative, .icons-act_delete, .icons-act_edit, .icons-act_inative, .icons-act_view, .icons-alert, .icons-e_comm, .icons-e_emp, .icons-e_page, .icons-e_post, .icons-e_user, .icons-e_view, .icons-error, .icons-infor, .icons-logout, .icons-profile, .icons-users {
+  background-image: url('../images/icons-s44c62e886a.png');
+  background-repeat: no-repeat; }
+
+.icons-accept {
+  background-position: 0 0; }
+
+.icons-act_ative {
+  background-position: 0 -20px; }
+
+.icons-act_delete {
+  background-position: 0 -45px; }
+
+.icons-act_edit {
+  background-position: 0 -70px; }
+
+.icons-act_inative {
+  background-position: 0 -95px; }
+
+.icons-act_view {
+  background-position: 0 -120px; }
+
+.icons-alert {
+  background-position: 0 -145px; }
+
+.icons-e_comm {
+  background-position: 0 -165px; }
+
+.icons-e_emp {
+  background-position: 0 -185px; }
+
+.icons-e_page {
+  background-position: 0 -205px; }
+
+.icons-e_post {
+  background-position: 0 -225px; }
+
+.icons-e_user {
+  background-position: 0 -245px; }
+
+.icons-e_view {
+  background-position: 0 -265px; }
+
+.icons-error {
+  background-position: 0 -285px; }
+
+.icons-infor {
+  background-position: 0 -305px; }
+
+.icons-logout {
+  background-position: 0 -325px; }
+
+.icons-profile {
+  background-position: 0 -355px; }
+
+.icons-users {
+  background-position: 0 -385px; }
+
+li {
+  display: inline-block;
+  width: 25px;
+  height: 25px; }
 
 * {
   box-sizing: border-box; }
 
-.grid, .column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12, .row {
+.column-1 {
   min-height: 1px;
   float: left;
   padding: 0 1%;
-  margin: 2px 0; }
-
-.column-1 {
+  margin: 2px 0;
   width: 8.33333%; }
 
 .column-2 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 16.66667%; }
 
 .column-3 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 25%; }
 
 .column-4 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 33.33333%; }
 
 .column-5 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 41.66667%; }
 
 .column-6 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 50%; }
 
 .column-7 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 58.33333%; }
 
 .column-8 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 66.66667%; }
 
 .column-9 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 75%; }
 
 .column-10 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 83.33333%; }
 
 .column-11 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 91.66667%; }
 
 .column-12 {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 100%; }
 
 .row {
+  min-height: 1px;
+  float: left;
+  padding: 0 1%;
+  margin: 2px 0;
   width: 100%; }
 
 .row:before,
@@ -67,55 +210,94 @@ li {
 .row:after {
   clear: both; }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
   .mobile-column, .column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {
     width: auto;
     float: none; } }
-.message, .success, .error, .warning, .primary {
+.bg-success {
+  background: #4CAF50;
+  min-height: 1px; }
+
+.bg-danger {
+  background: #E78177;
+  min-height: 1px; }
+
+.bg-warning {
+  background: #FFEB90;
+  min-height: 1px; }
+
+.bg-info {
+  background: #ABA8D8;
+  min-height: 1px; }
+
+.bg-primary {
+  background: #034F84;
+  min-height: 1px; }
+
+.alert {
   border: 2px solid #ccc;
   padding: 10px;
   color: #333; }
 
-.success {
-  background: #4CAF50; }
-
-.error {
-  background: #E78177; }
-
-.warning {
-  background: #FFEB90; }
-
-.primary {
-  background: #034F84; }
-
-.box-shadow, .card-calendar {
+.card-calendar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center; }
+  .card-calendar .card-header {
+    background-color: #898989;
+    padding: 40px;
+    font-size: 40px; }
+  .card-calendar .card-container {
+    background-color: #FFF;
+    padding: 10px; }
 
-.card-calendar .header {
-  padding: 10px;
-  font-size: 40px; }
-.card-calendar .container {
-  padding: 10px; }
-
-.card-success .header {
+.card-success > .card-header {
   background-color: #4CAF50;
   color: white; }
 
-.card-danger .header {
+.card-danger > .card-header {
   background-color: #E78177;
   color: white; }
 
-.card-alert .header {
+.card-warning > .card-header {
   background-color: #FFEB90;
   color: white; }
 
-.card-primary .header {
+.card-info > .card-header {
+  background-color: #ABA8D8;
+  color: white; }
+
+.card-primary > .card-header {
   background-color: #034F84;
   color: white; }
 
-.card-info .header {
-  background-color: #ABA8D8;
-  color: white; }
+footer, .footer, .footer-sm, .footer-md, .footer-lg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 10px; }
+
+.footer-sm {
+  min-height: 10%; }
+
+.footer-md {
+  min-height: 20%; }
+
+.footer-lg {
+  min-height: 30%; }
+
+header, .header, .header-sm, .header-md, .header-lg {
+  min-height: 60px;
+  position: relative;
+  top: 0;
+  width: 100%; }
+
+.header-sm {
+  min-height: 10%; }
+
+.header-md {
+  min-height: 20%; }
+
+.header-lg {
+  min-height: 30%; }
 
 /*# sourceMappingURL=default.css.map */

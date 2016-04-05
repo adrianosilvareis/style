@@ -1,0 +1,15 @@
+footer, .footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    min-height: 10px;
+}
+
+$sz: 0;
+@each $size in $sizes{
+    $sz: $sz + 10%;
+    .footer-#{$size}{
+        @extend .footer;
+        min-height: $sz;
+    }
+}

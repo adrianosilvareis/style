@@ -3,68 +3,31 @@
     <head>
         <title>SASS</title>
         <link rel="stylesheet" href="css/default.css"/>
+        <link rel="stylesheet" href="css/compile.css"/>
     </head>
     <body>
-        
-        <div class="column-2">
-            <div class="card-calendar card-success">
-                <div class="header">
-                    <h1>1</h1>
-                </div>
+        <header class="header bg-success"> 
+            <h1 class="logo">Titulo do site</h1>
+        </header>
 
-                <div class="container">
-                    <p>January 1, 2016</p>
+        <main class="content column-8 bg-info">
+            <div class="column-4">
+                <div class="card-calendar">
+                    <header class="card-header">1</header>
+                    <p class="card-container">1 de janeiro</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="column-2">
-            <div class="card-calendar card-primary">
-                <div class="header">
-                    <h1>1</h1>
-                </div>
-
-                <div class="container">
-                    <p>January 1, 2016</p>
+        </main>
+        <aside class="column-4 bg-danger">
+            <div class="column-12">
+                <div class="card-calendar">
+                    <header class="card-header">1</header>
+                    <p class="card-container">1 de janeiro</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="column-2">
-            <div class="card-calendar card-alert">
-                <div class="header">
-                    <h1>1</h1>
-                </div>
-
-                <div class="container">
-                    <p>January 1, 2016</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="column-2">
-            <div class="card-calendar card-danger">
-                <div class="header">
-                    <h1>1</h1>
-                </div>
-
-                <div class="container">
-                    <p>January 1, 2016</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="column-2">
-            <div class="card-calendar card-info">
-                <div class="header">
-                    <h1>1</h1>
-                </div>
-
-                <div class="container">
-                    <p>January 1, 2016</p>
-                </div>
-            </div>
-        </div>
-
+        </aside>
+        <footer class="footer-md bg-warning">
+            footer
+        </footer>
     </body>
 </html>

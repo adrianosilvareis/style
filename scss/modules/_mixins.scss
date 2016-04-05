@@ -1,0 +1,34 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin grid{
+    min-height: 1px;
+    float: left;
+    padding: 0 $grid-gutter;
+    margin: 2px 0;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+@function color($color){
+    @if $color == 'success'{
+        @return $success;
+    }@elseif $color == 'danger'{
+        @return $danger;
+    }@elseif $color == 'warning'{
+        @return $warning;
+    }@elseif $color == 'info'{
+        @return $info;
+    }@elseif $color == 'primary'{
+        @return $primary;
+    }@else{
+        @return $FFF;
+    }
+}

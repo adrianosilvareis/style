@@ -1,0 +1,6 @@
+@each $cor in $list{
+    .bg-#{$cor}{
+        background: color($cor);
+        min-height: 1px;
+    }
+}

@@ -1,47 +1,21 @@
 .card-calendar{
-    @extend .box-shadow;
-    .header {
-        padding: 10px;
+    @include box-shadow;
+    .card-header {
+        background-color: $default-dark;
+        padding: 40px;
         font-size: 40px;
     }
-    .container {
+    .card-container {
+        background-color: #FFF;
         padding: 10px;
     }
 }
 
-.card-success{
-    .header{
-        background-color: $success;
-        color: $text-inverse;
+@each $mess in $list{
+    .card-#{$mess}{
+        > .card-header{
+            background-color: color($mess);
+            color: $text-inverse;
+        }
     }
 }
-
-.card-danger{
-    .header{
-        background-color: $danger;
-        color: $text-inverse;
-    }
-}
-
-.card-alert{
-    .header{
-        background-color: $alert;
-        color: $text-inverse;
-    }
-}
-
-.card-primary{
-    .header{
-        background-color: $primary;
-        color: $text-inverse;
-    }
-}
-
-.card-info{
-    .header{
-        background-color: $info;
-        color: $text-inverse;
-    }
-}
-
-

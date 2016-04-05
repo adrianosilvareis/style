@@ -1,0 +1,9 @@
+//spring images
+@import "icons/*.png";
+@include all-icons-sprites;
+
+li{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
