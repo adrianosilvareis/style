@@ -1,0 +1,30 @@
+
+.message {
+    border: 2px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.success {
+    @extend .message;
+    background: $success-fosco;
+    border-color: $success;
+}
+
+.error {
+    @extend .message;
+    border-color: $danger;
+    border-color: $danger-fosco;
+}
+
+.warning {
+    @extend .message;
+    border-color: $alert;
+    border-color: $alert-fosco;
+}
+
+.primary {
+    @extend .message;
+    border-color: $primary;
+    border-color: $primary-fosco;
+}
