@@ -1,0 +1,18 @@
+
+.form{
+    width: 100%;
+    padding: 10px;
+    label{
+        @include title;
+        font-size: 1em;
+    }
+}
+
+select, input, .form-input{
+    @include box-input;
+    @include border-input(2px, #CCC, 4px);
+}
+
+select, textarea, .form-input{
+    width: 100%;
+}

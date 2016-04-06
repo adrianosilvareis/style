@@ -16,6 +16,27 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
+@mixin box-input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+@mixin border-input($border, $color, $radius){
+    border: $border solid $color;
+    @include border-radius($radius);
+}
+@mixin title{
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+@function color-inverse($color){
+    @if (lightness($color) < 30) {
+        @return #FFF;
+    } @else {
+        @return #000;
+    }
+}
 
 @function color($color){
     @if $color == 'success'{

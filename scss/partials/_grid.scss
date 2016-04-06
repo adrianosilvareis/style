@@ -10,6 +10,9 @@ $grid-max: 980px;
     .column-#{$i} {
         @include grid;
         width: 100% / $grid-columns * $i;
+        .form{
+            @include box-shadow;
+        }
     }
 }
 

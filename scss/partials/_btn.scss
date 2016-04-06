@@ -1,0 +1,20 @@
+.btn, input[type='submit']{
+    @include box-input;
+    @include border-input(2px, #CCC, 4px);
+    text-decoration: none;
+    border: none;
+}
+
+@each $item in $list{
+    .btn-#{$item}{
+        color: color-inverse(color($item));
+        font-weight: bold;
+        background: color($item);
+    }
+    
+    .btn-#{$item}:hover{
+        @include box-shadow;
+        color: #000;
+        background: #FFF;
+    }
+}
