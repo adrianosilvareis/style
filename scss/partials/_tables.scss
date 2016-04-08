@@ -1,0 +1,28 @@
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    td,th{
+        border-bottom: 1px solid $ligthgray;
+        padding: 15px;
+    }
+    th{
+        font-weight: bold;
+        text-align: center;
+    }
+    td{
+        text-align: left;
+    }
+    tr:nth-child(even) {background-color: $table-striped}
+    tr:hover {background-color: $table-hover}
+}
+
+@each $item in $list{
+    .table-#{$item}{
+        th{
+            background-color: color($item);
+            color: color-inverse(color($item));
+        }
+    }
+}
+
+

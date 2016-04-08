@@ -11,3 +11,15 @@
 @import "../partials/header";
 @import "../partials/form";
 @import "../partials/btn";
+@import "../partials/tables";
+@import "../partials/menu";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box !important;
+}

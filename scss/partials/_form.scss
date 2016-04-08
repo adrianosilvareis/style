@@ -10,7 +10,7 @@
 
 select, input, .form-input{
     @include box-input;
-    @include border-input(2px, #CCC, 4px);
+    @include border-input(2px, $ligthgray, 4px);
 }
 
 select, textarea, .form-input{

@@ -2,8 +2,9 @@
 @import "icons/*.png";
 @include all-icons-sprites;
 
-li{
+.icons{
     display: inline-block;
     width: 25px;
     height: 25px;
+    font-size: 0;
 }

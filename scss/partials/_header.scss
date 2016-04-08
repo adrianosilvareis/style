@@ -1,13 +1,13 @@
 header, .header{
-    min-height: 60px;
-    position: relative;
-    top: 0;
+    position:relative;
+    top:0;
     width:100%;
+    min-height:60px;
 }
 
 $sz: 0;
 @each $size in $sizes{
-    $sz: $sz + 10%;
+    $sz: $sz + 80px;
     .header-#{$size}{
         @extend .header;
         min-height: $sz;

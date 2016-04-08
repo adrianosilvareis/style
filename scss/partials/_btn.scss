@@ -1,20 +1,33 @@
 .btn, input[type='submit']{
     @include box-input;
-    @include border-input(2px, #CCC, 4px);
+    @include border-input(2px, $ligthgray, 4px);
+    display: inline-block;
     text-decoration: none;
-    border: none;
+    font-size: 1em;
+    border: 1px solid grey;
+    text-align: center;
 }
-
+.btn:hover{
+    @include box-shadow;
+}
+.btn-hover:hover{
+    @include box-shadow;
+    color: #000 !important;
+    background: #FFF !important;
+}
+.btn-inline{
+    @extend .btn;
+    float: left;
+}
 @each $item in $list{
     .btn-#{$item}{
         color: color-inverse(color($item));
         font-weight: bold;
         background: color($item);
+        border: 1px solid color($item);
     }
-    
+
     .btn-#{$item}:hover{
-        @include box-shadow;
-        color: #000;
-        background: #FFF;
+        background: lighten(color($item), 10);
     }
 }
